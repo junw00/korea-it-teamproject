@@ -1,0 +1,214 @@
+.recommend-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.recommend-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.recommend-main-box {
+    border-bottom: 0.7px solid #9c9c96;
+}
+
+.recommend-top {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1280px;
+}
+
+.recommend-img-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1280px;
+    height: 280px;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210902/pngtree-blue-sky-and-white-clouds-pure-sky-image_786707.jpg");
+    background-size: 600px 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 70px;
+    margin-bottom: 120px;
+
+}
+
+.recommend-banner-top {
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+}
+.recommend-magazine {
+    padding-top: 20px;
+    width: 950px;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recommend-magazine-content {
+    padding: 50px 150px 0px 150px;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+
+.move-recommend-main-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: black;
+    text-decoration: none;
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+    
+    margin-top: 20px;
+    padding: 0px 10px;
+    border: 1.2px solid black;
+}
+
+
+
+
+.recommend-main-box {
+    position: relative;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.recommend-main-box-top {
+    position: absolute;
+    left: 10px;
+    top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1280px;
+    margin-bottom: 8px;
+    padding: 0px 0px 0px 24px;
+
+}
+
+.recommend-main-list {
+    display: grid;
+    grid-template-columns: 330px 330px 330px 330px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 20px; */
+}
+
+.recommend-main-top-box {
+    margin-top: 80px;
+    display: flex;
+    position: relative;
+    width: 1280px;
+    height: 30px;
+}
+
+.recommend-main-top {
+    /* position: absolute; */
+    top: 0;
+    display: flex;
+
+    justify-content: space-between;
+    z-index: 1;
+    width: 1280px;
+
+    padding-left: 9px;
+}
+
+.navbar-nav {
+    background-color: white;
+    color: black;
+}
+
+
+.navbar-dark, .navbar[data-bs-theme=dark] {
+    color: black;
+    --bs-navbar-hover-color: black;
+    --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
+    --bs-navbar-active-color: #fff;
+    --bs-navbar-brand-color: #fff;
+    --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
+    --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+}
+
+
+.nav-link {
+    color: black;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: black;
+}
+
+.navbar:hover {
+    color: black;
+}
+
+.navbar-nav:hover {
+    color: black;
+
+}
+
+.nav-item {
+    width: 70px;
+}
+
+.dropdown-menu {
+    min-width: 70px;
+}
+
+.recommend-main-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-top: 10px;
+    margin-bottom: 45px;
+}
+
+.write-btn-img-box {
+    text-align: end;
+    width: 1300px;
+}
+
+.write-btn-img {
+    /* align-items: end; */
+    font-size: px;
+}
+
+.write-btn {
+    height: 40px;
+    width: 90px;
+    align-items: center;
+    height: 30px;
+    width: 75px;
+    font-size: 13px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.write-img {
+    margin-right: 10px;
+    font-size: 13px;
+}

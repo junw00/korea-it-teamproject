@@ -1,0 +1,142 @@
+
+
+.location-name{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
+}
+
+.location-container{
+    /*여행지 정렬*/
+    display: grid;
+    grid-template-columns: 330px 330px 330px 330px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-body-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.main-body-contents img{
+ width: 250px;
+ height: 300px;
+ object-fit: cover; 
+ border-radius: 20px;
+ 
+    
+}
+.main-body-contents img:hover{
+    transform: scale(1.03);   /* 이미지 확대 */
+    transition: transform .2s;  /* 시간 설정 */
+}
+
+.main-body-contents button{
+    border: none;
+    background-color: white;
+}
+
+.main-body-contents h2{
+    display: flex;
+    justify-content: center;
+}
+
+.main-body-contents p{
+    display: flex;
+    justify-content: center;
+    opacity: 0.5;
+}
+
+
+/*모달창*/
+.location-modal-container{
+    /* padding: 50px; */
+    display: fixed;
+    width: 900px;
+    height: 540px;
+    background-color: white;
+    overflow-y: auto;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    padding: 5px;
+    transform: translate(-50%, -50%);
+    z-index: 1011;
+    border-radius: 20px;
+
+}
+
+.modal-bg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1010;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+
+
+.locattion-modal-header{
+    display: flex;
+    justify-content: right;
+    
+}
+
+.locattion-modal-header button{
+    padding: 10px;
+    background-color: white;
+    border: white;
+    opacity: 0.6;
+
+}
+
+.location-modal-body{
+    margin: 50px;
+    
+}
+.location-modal-left{
+    padding: 5px;
+    float: left;
+    width: 50%;
+    height: 100%;
+    
+}
+.location-modal-btn{
+    display: flex;
+    justify-content: center;
+    
+}
+.location-modal-btn button{
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 50px;
+    background-color:#98DDE3;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.location-modal-right{
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+.location-modal-right img{
+    padding: 5px;
+    width: 100%;
+    height: 400px;
+}

@@ -1,0 +1,117 @@
+.detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1280px;
+}
+
+.detail-box {
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+    margin: 20px 200px;
+}
+
+.detail-location {
+    margin-top: 10px;
+    margin-bottom: 7px;
+    font-size: 15px;
+    font-weight: 1000;
+    padding-top: 30px;
+}
+
+.detail-info {
+    display: flex;
+    /* align-items: start; */
+    height: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+.detail-title {
+    height: 40px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.detail-name, .detail-view-count {
+    width: 50px;
+    display: flex;
+    align-items: center;
+}
+.detail-date {
+    width: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.detail-title span{
+    font-size: 30px;
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+.detail-name span{
+    border-right: 0.9px solid #b4b4b4;
+    margin-right: 10px;
+    width: 40px;
+    font-size: 12px;
+}
+
+.detail-date span{
+    border-right: 0.9px solid #b4b4b4;
+    margin-right: 10px;
+    width: 80px;
+
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+.detail-view-count {
+    font-size: 12px;
+}
+
+.detail-content{
+    min-height: 350px;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+.btn-box {
+    display: flex;
+    border-bottom: 1px solid black;
+
+    margin-top: 10px;
+    padding-bottom: 8px;
+}
+
+.like-btn, .comment-btn{
+    border: none;
+    background-color: white;
+    margin-right: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 0;
+}
+
+.like-btn span, .comment-btn span {
+    font-size: 17px;
+}
+
+.heart-icon, .comment-icon {
+    margin-right: 5px;
+}
+
+.comment-section-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    margin: 10px 0px;
+}
+
+.comment-section-top-box {
+    margin-bottom: 10px;
+}

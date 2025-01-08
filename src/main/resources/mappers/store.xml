@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.team4.teamproject.domain.repository.StoreRepository">
+
+  <insert id="StoreRepository" parameterType="com.team4.teamproject.domain.Store" useGeneratedKeys="true" keyProperty="store_id">
+    INSERT INTO
+      store
+    VALUES(
+      0,
+      #{group_name},
+      #{store_name_kr},
+      #{store_name_en},
+      #{address},
+      #{tel_number}
+      #{image_url},
+      #{content},
+      0
+    );
+  </insert>
+  <select id="getStoreList" parameterType="Integer" resultType="com.team4.teamproject.domain.Store">
+        SELECT
+            S.store_id,
+            S.group_name,
+            S.store_name_kr,
+            S.store_name_en,
+            S.address,
+            S.tel_number,
+            S.image_url,
+            S.content,
+            S.store_area_id
+        FROM
+            store AS S
+        INNER JOIN
+            area AS A
+        ON
+            S.store_area_id = A.area_id
+        WHERE
+            store_area_id = #{area_id}
+        ORDER BY
+            store_id DESC
+    </select>
+
+</mapper>

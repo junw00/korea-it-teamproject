@@ -1,0 +1,131 @@
+.main-container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.main-top{
+    margin-top: 73px;
+}
+
+
+.main-top-recommend-title{
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.main-top-recommend-list{
+    /*추천 여행지 정렬*/
+    display: flex;
+    justify-content: center;
+    /* grid-template-columns: 430px 430px 430px; */
+    /* flex-direction: column; */
+    align-items: center;
+    /* justify-content: center; */
+    
+    
+}
+
+
+
+.main-top-recommend-list img{
+        
+    width: 400px;
+    height: 384px;
+    border-radius: 20px;
+}
+
+.main-top-recommend-list img:hover{
+    transform: scale(1.03);   /* 이미지 확대 */
+    transition: transform .2s;  /* 시간 설정 */
+    filter: brightness(1.1);
+    
+}
+
+.main-top-search{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    /*스크롤 내릴때 검색창 고정*/
+    /* position: sticky;
+    top: 10px; */
+    
+}
+
+.main-top-search-travel{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 700;
+    /*스크롤 내릴때 검색창 고정*/
+    /* position: sticky;
+    top: 10px; */
+    
+    
+}
+
+.main-top-search-input{
+    margin-left: 20px;
+    padding: 0px;
+    border: 0 solid;
+    outline: none;
+    width: 500px;
+    height: 50px;
+    display: inline;
+    
+}
+.main-top-search-input::placeholder{
+    
+    color:#dadada;
+    
+}
+.main-top-search-city{
+    display: inline-flex;
+    box-shadow: 1px 2px 5px  gray;
+    
+    border-radius: 10px;
+}
+
+.main-top-search-city button{
+    margin: 10px;
+    padding: 0px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: white;
+    
+    
+}
+
+.main-top-search-city img{
+    opacity: 0.8;
+    background-color: white;
+    width: 25px;
+    height: 25px;
+
+}
+
+
+
+.main-body-contents{
+    margin: 50px;
+    
+    
+    
+}
+.main-body-contents img{
+ width: 250px;
+ height: 300px;
+ object-fit: cover;
+    
+    
+}

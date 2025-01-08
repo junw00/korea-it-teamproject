@@ -1,0 +1,391 @@
+#travel_plan_wrap {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  /* gap: 30px; */
+}
+
+.travel_place {
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+}
+
+/* description: 선택 메뉴 */
+.travel_place_menu {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+
+.travel_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  font-size: 18px;
+  font-weight: 600;
+  background-image: url(./asset/logo.png);
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+}
+
+.travel_logo:hover {
+  cursor: pointer;
+}
+
+.travel_place_menu_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #78beff;
+}
+
+.travel_place_menu_list:hover {
+  cursor: pointer;
+}
+
+/* description: 장소 선택 박스 */
+.travel_plan {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.travel_plan_area {
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.travel_plan_date {
+  font-size: 14px;
+  color: #999;
+}
+
+.travel_plan_place {
+  display: flex;
+  flex-direction: column;
+}
+
+/* description: 장소선택 및 신규장소 등록 버튼 */
+.travel_plan_place_select {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.travel_plan_place_button {
+  height: 40px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0d5fda;
+  border-bottom: 3px solid #0d5fda;
+}
+
+.disable_button {
+  height: 40px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  border-bottom: 3px solid #fff;
+}
+
+.disable_button:hover {
+  cursor: pointer;
+}
+
+.travel_plan_place_button:hover {
+  cursor: pointer;
+}
+
+/* description: 장소 검색 박스 */
+.travel_plan_place_search_box {
+  border: 1PX solid #999;
+  border-radius: 10px;
+  height: 38px;
+  padding: 8px;
+  box-sizing: border-box;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+
+.travel_plan_place_search_text {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 16px;
+  font-weight: 400;
+  flex: 1;
+}
+
+/* .travel_plan_place_search_icon_box {
+  border-radius: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.travel_plan_place_search_icon_box:hover {
+  cursor: pointer;
+} */
+
+.travel_plan_place_search_icon {
+  width: 21px;
+  height: 21px;
+  border: none;
+  background: none;
+  background-image: url(asset/search.png);
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+}
+
+/* description: 장소 상세분류 버튼 */
+.travel_place_group {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.travel_place_group_list {
+  border: 1px solid #444;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.travel_place_group_list:hover {
+  cursor: pointer;
+}
+
+.travel_place_list_item {
+  width: 100%;
+  overflow: auto;
+  height: 70vh;
+}
+
+/* description: 신규장소 등록 */
+.travel_new_place {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.travel_new_place_map {
+  width: 100%;
+  height: 180px;
+}
+
+.map {
+  width: 360px;
+  height: 180px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: medium;
+  border-color: #D8D8D8;
+}
+
+.travel_new_place_text {
+  width: 100%;
+  text-align: center;
+}
+
+.travel_new_place_list {
+  width: 100%;
+  /* background-color: #eee; */
+  height: 390px;
+  overflow: auto;
+}
+
+.travel_new_place_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 70px;
+}
+
+.travel_new_place_left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.travel_new_place_name {
+  font-weight: 600;
+}
+
+.travel_new_place_address {
+  font-weight: 400;
+  color: #999;
+  font-size: 14px;
+}
+
+.travel_new_place_right {
+  font-weight: 400;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #000;
+}
+
+.travel_new_place_right:hover {
+  cursor: pointer;
+}
+
+/* description: 내가 담은 지역 리스트 */
+.travel_planning {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  z-index: 1;
+  position: relative;
+}
+
+/* description: 여행계획 일자별 선택 박스 */
+.travel_planning_day {
+  padding-top: 80px;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.travel_planning_date {
+  font-size: 18px;
+  font-weight: 600;
+  color: #78beff;
+}
+
+.travel_planning_box {
+  width: 370px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.travel_planning_list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.travel_planning_count {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.travel_planning_place_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: auto;
+  /* height: 832px; */
+}
+
+.travel_planning_button_close_box {
+  width: 32px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  position: absolute;
+  top: 48%;
+  right: -32px;
+}
+
+.travel_planning_button_close_box:hover {
+  cursor: pointer;
+}
+
+.travel_planning_close_button {
+  width: 24px;
+  height: 24px;
+  background-image: url(./asset/chevron-left.png);
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+}
+
+.travel_planning_button_open_box {
+  width: 32px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  position: absolute;
+  top: 48%;
+  right: -32px;
+}
+
+.travel_planning_button_open_box:hover {
+  cursor: pointer;
+}
+
+.travel_planning_open_button {
+  width: 24px;
+  height: 24px;
+  background-image: url(./asset/chevron-left.png);
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  transform: rotate(0.5turn);
+}
+
+.right-map {
+  width: 950px;
+  height: 100vh;
+  z-index: 0;
+}
+
+.full-map {
+  width: 1320px;
+  height: 100vh;
+  z-index: 0;
+}
+
+#placesList li {list-style: none;}
+#placesList .item {position:relative;border-bottom:1px solid #888;overflow: hidden;cursor: pointer; min-height: 60px; max-height: 95px;}
+#placesList .item span {display: block;margin-top:2px;}
+#placesList .item h5, #placesList .item .info {text-overflow: ellipsis;overflow: hidden;white-space: nowrap; font-size: 14px;}
+#placesList .item h5 { font-weight: 600;}
+#placesList .item .info{padding: 10px; box-sizing: border-box;}
+#placesList .info .gray {color:#8a8a8a;}
+#placesList .info .jibun {padding-left:26px;background:url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_jibun.png) no-repeat;}
+#placesList .info .tel {color:#009900;}
+#pagination {margin:10px auto;text-align: center;}
+#pagination a {display:inline-block;margin-right:10px;}
+#pagination .on {font-weight: bold; cursor: default;color:#777;}
+
+#placesList .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#placesList .info .new_place_button {
+  width: 40px;
+  height: 30px;
+}

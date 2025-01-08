@@ -1,0 +1,59 @@
+.travel_planning_select_place {
+  display: flex;
+  width: 100%;
+  background-color: #ccc;
+}
+
+.travel_planning_place_box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  height: 60px;
+}
+
+.travel_planning_place_left {
+  display: flex;
+  gap: 5px;
+}
+
+.travel_planning_place_img {
+  width: 40px;
+  height: 40px;
+  background-image: url(../../../public/image/dog.jpg);
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.travel_planning_place_text {
+  font-size: 14px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.travel_planning_place_name {
+  font-weight: 600;
+}
+
+.travel_planning_place_info {
+  display: flex;
+  gap: 5px;
+}
+
+.travel_planning_group_name {
+  color: #3c95e9;
+}
+
+.travel_planning_place_address {
+  color: #666;
+}
+
+.travel_planning_place_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+}

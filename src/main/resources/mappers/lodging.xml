@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.team4.teamproject.domain.repository.LodgingRepository">
+
+  <insert id="LodgingRepository" parameterType="com.team4.teamproject.domain.Lodging" useGeneratedKeys="true" keyProperty="lodging_id">
+    INSERT INTO
+      lodging
+    VALUES(
+      0,
+      #{lodging_name_kr},
+      #{lodging_name_en},
+      #{address},
+      #{tel_number},
+      #{image_url},
+      #{content},
+      0
+    );
+  </insert>
+
+  <select id="getLodgingList" parameterType="Integer" resultType="com.team4.teamproject.domain.Lodging">
+        SELECT
+            L.lodging_id,
+            L.lodging_name_kr,
+            L.lodging_name_en,
+            L.address,
+            L.tel_number,
+            L.image_url,
+            L.content,
+            L.lodging_area_id
+        FROM
+            lodging AS L
+        INNER JOIN
+            area AS A
+        ON
+            L.lodging_area_id = A.area_id
+        WHERE
+            lodging_area_id = #{area_id}
+        ORDER BY
+            lodging_id DESC
+    </select>
+
+</mapper>

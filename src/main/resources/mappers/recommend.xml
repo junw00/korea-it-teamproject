@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.team4.teamproject.domain.repository.recommend.RecommendRepository">
+    <insert id="saveRecommend" parameterType="com.team4.teamproject.domain.repository.recommend.Recommend"
+            useGeneratedKeys="true" keyProperty="board_number">
+            INSERT INTO
+                recommend
+            VALUES
+                (0,
+                1,
+                #{title},
+                #{contents},
+                #{image_url},
+                0,
+                0,
+                NOW(),
+                0,
+                #{location}
+                )
+    </insert>
+    <select id="getRecommendList" parameterType="hashmap" resultType="com.team4.teamproject.domain.repository.recommend.Recommend">
+        SELECT
+            board_number,
+            title,
+            contents,
+            image_url,
+            like_count,
+            comment_count,
+            write_datetime,
+            view_count,
+            location
+        FROM
+            recommend
+        WHERE
+            <choose>
+                <when test='location == "지역"'>
+                    1 = 1
+                </when>
+                <when test='location != "지역"'>
+                    location = #{location}
+                </when>
+            </choose> LIMIT 16;
+    </select>
+
+    <select id="getNotice" parameterType="int" resultType="com.team4.teamproject.domain.repository.recommend.Recommend">
+        SELECT
+            board_number,
+            title,
+            contents,
+            image_url,
+            like_count,
+            comment_count,
+            write_datetime,
+            view_count,
+            location
+        FROM
+            recommend
+        WHERE
+            board_number = #{board_number}
+    </select>
+
+    <select id="getCountRecommend" parameterType="map" resultType="int">
+        SELECT
+            COUNT(*)
+        FROM
+            recommend
+        WHERE
+            <choose>
+                <when test='location == "지역"'>
+                    1 = 1
+                </when>
+                <when test='location != "지역"'>
+                    location = #{location}
+                </when>
+            </choose>
+    </select>
+
+</mapper>

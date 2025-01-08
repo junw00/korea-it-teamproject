@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.team4.teamproject.domain.repository.comment.CommentRepository">
+    <insert id="addComment" parameterType="map" useGeneratedKeys="true" keyProperty="comment_number">
+        INSERT INTO
+            comment
+        VALUES
+            (0,
+            #{board_number},
+            1,
+            #{contents},
+            NOW())
+    </insert>
+
+    <select id="getCommentList" parameterType="int" resultType="com.team4.teamproject.domain.repository.comment.Comment">
+        SELECT
+            um.user_name,
+            um.user_email,
+            um.user_code,
+            cm.comment_number,
+            rm.board_number,
+            cm.contents,
+            cm.write_datetime
+        FROM
+            comment cm
+            LEFT OUTER JOIN recommend rm ON( cm.board_number = rm.board_number )
+            LEFT OUTER JOIN user um ON( cm.user_code = um.user_code )
+        WHERE
+            cm.board_number = #{board_number}
+    </select>
+</mapper>

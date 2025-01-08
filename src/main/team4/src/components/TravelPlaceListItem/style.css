@@ -1,0 +1,103 @@
+.travel_place_list {
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.travel_place_list_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ccc;
+}
+
+.travel_place_list_left {
+  display: flex;
+  gap: 8px;
+}
+
+.travel_place_list_img_box {
+  width: 60px;
+  height: 60px;
+  background-color: #78beff;
+}
+
+.travel_place_list_text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.travel_place_name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.travel_place_group_box {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.travel_place_group_name {
+  color: #3c95e9;
+}
+
+.travel_place_group_address {
+  color: #666;
+}
+
+.travel_place_list_right {
+  width: 28px;
+  height: 28px;
+}
+
+.plus_image_box {
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 10px;
+  background-image: url(asset/plus_button.png);
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+}
+
+/* .plus_image_box, .check_image_box:hover {
+  cursor: pointer;
+} */
+
+.plus_image {
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 10px;
+  background-color: #e9e9e9;
+  background-image: url(asset/plus_button.png);
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+}
+
+.check_image_box {
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 10px;
+  background-color: #78beff;
+  background-image: url(asset/check_button.png);
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+}
+
+.check_image {
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 10px;
+  /* background-color: #78beff; */
+  background-image: url(asset/check_button.png);
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+}

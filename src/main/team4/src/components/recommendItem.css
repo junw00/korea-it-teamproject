@@ -1,0 +1,40 @@
+.recommend-main-travel-info {
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 24px;
+
+    line-height: 22px;
+}
+
+
+.recommend-main-travel-title {
+    max-width: 288px;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.recommend-main-travel-user {
+    font-size: 13px;
+    color: rgb(133, 131, 131);
+}
+
+.recommend-travel-area-date {
+    display: flex;
+    font-size: 12px;
+}
+.recommend-travel-area {
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.recommend-travel-img {
+    width: 288px;
+    border-radius: 5px;
+
+    height: 300px;
+}

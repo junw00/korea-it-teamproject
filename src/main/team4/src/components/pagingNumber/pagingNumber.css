@@ -1,0 +1,15 @@
+.paging-number-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paging-number-box > button {
+    width: 30px;
+    height: 35px;
+
+    margin: 4px;
+    border: none;
+    border-radius: 5px;
+    /* border */
+}
